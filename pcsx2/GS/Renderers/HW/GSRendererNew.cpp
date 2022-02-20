@@ -850,6 +850,8 @@ void GSRendererNew::EmulateBlending(bool& DATE_PRIMID, bool& DATE_BARRIER)
 			m_conf.ps.blend_a = 0;
 			m_conf.ps.blend_b = 2;
 			m_conf.ps.blend_d = 2;
+
+			fprintf(stderr, "Blend mix sw, barrier save, ALPHA.C: %u\n", ALPHA.C);
 		}
 		else
 		{
